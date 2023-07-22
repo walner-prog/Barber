@@ -1,0 +1,376 @@
+.animate-charcter
+     {
+        text-transform: uppercase;
+        background-image: linear-gradient(
+        -225deg,
+        hsl(50, 74%, 54%) 0%,
+        #4a7a10 29%,
+        #ff2713 67%,
+        #fff800 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+            font-size: 190px;
+      }
+      
+      @keyframes textclip {
+        to {
+          background-position: 200% center;
+        }
+      }
+      .animate-charcter{
+        font-size: 25px;
+        margin-top: 300px;
+      }
+
+      /** mismo codigo con otra clase  */
+
+      .animate-charcter2:hover
+     {
+        text-transform: uppercase;
+        background-image: linear-gradient(
+        -225deg,
+        #31e071 0%,
+        #297a10 29%,
+        #ec1313 67%,
+        #ced0bf 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+            font-size: 190px;
+      }
+      
+      @keyframes textclip {
+        to {
+          background-position: 200% center;
+        }
+      }
+      .animate-charcter{
+        font-size: 25px;
+        margin-top: 300px;
+      } 
+      /** segunda animacion */
+
+
+
+      .title-word {
+        animation: color-animation 4s linear infinite;
+      }
+      
+      .title-word-1 {
+        --color-1: #7153df;
+        --color-2: #3D8DAE;
+        --color-3: #a8e4af;
+      }
+      
+      .title-word-2 {
+        --color-1: #DBAD4A;
+        --color-2: #ACCFCB;
+        --color-3: #17494D;
+      }
+      
+      .title-word-3 {
+        --color-1: #ACCFCB;
+        --color-2: #dbe4a8;
+        --color-3: #cfcbac;
+      }
+      
+      .title-word-4 {
+        --color-1: #3D8DAE;
+        --color-2: #DF8453;
+        --color-3: #e4dfa8;
+      }
+      
+      @keyframes color-animation {
+        0%    {color: var(--color-1)}
+        32%   {color: var(--color-1)}
+        33%   {color: var(--color-2)}
+        65%   {color: var(--color-2)}
+        66%   {color: var(--color-3)}
+        99%   {color: var(--color-3)}
+        100%  {color: var(--color-1)}
+      }
+      
+      /* Here are just some visual styles. 🖌 */
+      
+      /*.container {
+        display: grid;
+        place-items: center;  
+        text-align: center;
+        height: 100vh;
+        margin-top:200px;
+      }
+      */
+      .title2 .title-word {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-size: 2vw;
+        text-transform: uppercase;
+      
+      }
+
+       /** segunda animacion tlite2 */
+
+
+
+       .title-word {
+        animation: color-animation 8s linear infinite;
+      }
+      
+      .title-word-1a {
+        --color-1: #DF8453;
+        --color-2: #3D8DAE;
+        --color-3: hwb(260 4% 95%);
+      }
+      
+      .title-word-2a {
+        --color-1: #DBAD4A;
+        --color-2: #cfacac;
+        --color-3: #494d17;
+      }
+      
+      .title-word-3a {
+        --color-1: #ACCFCB;
+        --color-2: #E4A9A8;
+        --color-3: #ACCFCB;
+      }
+      
+      .title-word-4a {
+        --color-1: #3D8DAE;
+        --color-2: #DF8453;
+        --color-3: #E4A9A8;
+      }
+      
+      @keyframes color-animation {
+        0%    {color: var(--color-1)}
+        32%   {color: var(--color-1)}
+        33%   {color: var(--color-2)}
+        65%   {color: var(--color-2)}
+        66%   {color: var(--color-3)}
+        99%   {color: var(--color-3)}
+        100%  {color: var(--color-1)}
+      }
+      
+      
+      .title , .title-word {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-size: 3vw;
+        text-transform: uppercase;
+       
+      }
+
+    
+
+      /* //// animacion 2 */
+      .services,.promociones {
+        margin: 0;
+        font-size: 1.7em;
+        padding: 0;
+        color:olive ;
+        -webkit-box-pack: center;
+        margin-top: 10px;
+        font-family: "Luckiest Guy", cursive;
+       /* text-shadow: 0 0.1em 20px black, 0.05em -0.03em 0 black, 0.05em 0.005em
+        0 black, 0em 0.08em 0 black, 0.05em 0.08em 0 black, 0px -0.03em 0 black,
+         -0.03em -0.03em 0 black, -0.03em 0.08em 0 black, -0.03em 0 0 black;*/
+      }
+      .services,.servicesSpan ,.promocionesSpan {
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
+        display: inline-block;
+        
+      }
+      .services,.servicesSpan ,.promocionesSpan:first-child {
+        -webkit-animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+                animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+      }
+      .services,.servicesSpan ,.promocionesSpan:last-child {
+        -webkit-animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+                animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+      }
+      
+      @-webkit-keyframes bop {
+        0% {
+          -webkit-transform: scale(0.9);
+                  transform: scale(0.9);
+        }
+        50%,
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+      }
+      
+      @keyframes bop {
+        0% {
+          -webkit-transform: scale(0.9);
+                  transform: scale(0.9);
+        }
+        50%,
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+      }
+      @-webkit-keyframes bopB {
+        0% {
+          -webkit-transform: scale(4.9);
+                  transform: scale(4.9);
+        }
+        80%,
+        100% {
+          -webkit-transform: scale(1) rotateZ(-1deg);
+                  transform: scale(1) rotateZ(-1deg);
+        }
+      }
+      @keyframes bopB {
+        0% {
+          -webkit-transform: scale(0.9);
+                  transform: scale(0.9);
+        }
+        80%,
+        100% {
+          -webkit-transform: scale(1) rotateZ(-1deg);
+                  transform: scale(1) rotateZ(-1deg);
+        }
+      }
+      
+
+      /* //// animacion 2.1 */
+      .contacto {
+        margin: 0;
+        font-size: 1.7em;
+        padding: 0;
+        color:rgb(128, 87, 0);
+        -webkit-box-pack: center;
+        margin-top: 10px;
+        font-family: "Luckiest Guy", cursive;
+       /* text-shadow: 0 0.1em 20px black, 0.05em -0.03em 0 black, 0.05em 0.005em 0 black, 0em 0.08em 0 black, 0.05em 0.08em 0 black, 0px -0.03em 0 black, 
+       -0.03em -0.03em 0 black, -0.03em 0.08em 0 black, -0.03em 0 0 black;*/
+      }
+
+      .diario,.diarioSpan {
+        margin: 0;
+        font-size: 1.7em;
+        padding: 0;
+        width: 100%;
+        -webkit-box-pack: center;
+        font-family: "Luckiest Guy", cursive;
+       /* text-shadow: 0 0.1em 20px black, 0.05em -0.03em 0 black, 0.05em 0.005em 
+       0 black, 0em 0.08em 0 black, 0.05em 0.08em 0 black, 0px -0.03em 0 black, -
+       0.03em -0.03em 0 black, -0.03em 0.08em 0 black, -0.03em 0 0 black;*/
+      }
+      .contacto,.contactoSpan ,.diarioSpan :hover{
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
+        display: inline-block;
+        
+      }
+      .contacto,.contactoSpan ,.diarioSpan:first-child:hover {
+        -webkit-animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+                animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+      }
+      .contacto,.contactoSpan ,.diarioSpan:last-child:hover {
+        -webkit-animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+                animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+      }
+      .marging{
+        
+        padding-top: 20px;
+        font-size:35px;
+
+      }
+      @-webkit-keyframes bop {
+        0% {
+          -webkit-transform: scale(0.9);
+                  transform: scale(0.9);
+        }
+        50%,
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+      }
+      
+      @keyframes bop {
+        0% {
+          -webkit-transform: scale(0.9);
+                  transform: scale(0.9);
+        }
+        50%,
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+      }
+      @-webkit-keyframes bopB {
+        0% {
+          -webkit-transform: scale(4.9);
+                  transform: scale(4.9);
+        }
+        80%,
+        100% {
+          -webkit-transform: scale(1) rotateZ(-1deg);
+                  transform: scale(1) rotateZ(-1deg);
+        }
+      }
+      @keyframes bopB {
+        0% {
+          -webkit-transform: scale(0.9);
+                  transform: scale(0.9);
+        }
+        80%,
+        100% {
+          -webkit-transform: scale(1) rotateZ(-1deg);
+                  transform: scale(1) rotateZ(-1deg);
+        }
+      }
+
+      
+      @media screen and (max-width: 650px) {
+        .title .title-word {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 800;
+          font-size: 5.5vw;
+          text-transform: uppercase;
+          margin-left: 30px;
+         
+        }
+
+        .title2 .title-word {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 800;
+          font-size: 5.5vw;
+          text-transform: uppercase;
+         
+        }
+        .services,.promociones {
+          margin: 0;
+          font-size: 1.3em;
+          padding: 0;
+          color:olive ;
+          -webkit-box-pack: center;
+          margin-top: -27px;
+          margin-left: 50px;
+          font-family: "Luckiest Guy", cursive;
+          text-shadow: 0 0.1em 20px black, 0.05em -0.03em 0 black, 0.05em 0.005em 0 black, 0em 0.08em 0 black, 0.05em 0.08em 0 black, 0px -0.03em 0 black, -0.03em -0.03em 0 black, -0.03em 0.08em 0 black, -0.03em 0 0 black;
+        }
+
+      }

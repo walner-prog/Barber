@@ -50,6 +50,7 @@ https://templatemo.com/tm-585-barber-shop
 body {
   background-color: var(--white-color);
   font-family: var(--body-font-family); 
+  background:lightcyan;
   
 }
 
@@ -103,18 +104,25 @@ p {
   color: var(--p-color);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-light);
+  
+}
+a {
+ font-size: 30px;
+  
 }
 
 ul li {
   color: var(--p-color);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-light);
+ 
 }
 
 a, 
 button {
   touch-action: manipulation;
   transition: all 0.3s;
+  font-size: 20px;
 }
 
 a {
@@ -428,8 +436,13 @@ strong {
 /*---------------------------------------
   ABOUT              
 -----------------------------------------*/
+.about-section  {
+  color: var(--secondary-color);
+  background:lightcyan;
+}
 .about-section h6 {
   color: var(--secondary-color);
+  
 }
 
 .about-section .custom-block-bg-overlay-image {
@@ -452,6 +465,9 @@ strong {
   padding: 10px 17px 10px 20px;
   transition: all 0.3s ease;
 }
+.section-padding{
+  background:lightcyan;
+}
 
 
 /*---------------------------------------
@@ -468,6 +484,9 @@ strong {
 
 .featured-section h2 {
   color: var(--secondary-color);
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
 }
 
 .featured-section p {
@@ -480,6 +499,9 @@ strong {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
 }
 
 
@@ -506,6 +528,7 @@ strong {
   display: block;
   margin: auto;
   transition: all 0.3s;
+  margin-bottom: 5px;
 }
 
 .services-thumb-price {
@@ -579,13 +602,16 @@ strong {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+ 
 }
 
 .booking-form {
   background: var(--white-color);
   border-radius: var(--border-radius-medium);
   padding: 65px;
+ 
 }
+
 
 
 /*---------------------------------------
@@ -624,6 +650,7 @@ strong {
   line-height: 50px;
   text-align: center;
   position: relative;
+
 }
 
 .contact-block strong {
@@ -743,7 +770,7 @@ strong {
   
 }
 .social-icon-item a{
-  color:firebrick
+  color:darkblue
 
  
 }
@@ -830,12 +857,12 @@ strong {
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 20px;
-    visibility: hidden;
+   
   }
   
 
   h2 {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   h3 {
@@ -857,6 +884,10 @@ strong {
   .booking-form {
     padding: 35px;
   }
+  p{
+    font-size: 15px;
+  }
+ 
   .hero-section {
     background-image: url('../images/BarberG/berber2.jpg');
     background-repeat: no-repeat;
@@ -875,4 +906,45 @@ strong {
     visibility:hidden;
   }
 }
+/* Aplica transiciones suaves a todos los elementos */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Transición suave al cambiar el color de fondo de los enlaces */
+a {
+  transition: background-color 0.6s ease;
+}
+
+/* Transición suave al cambiar el tamaño de fuente y el color del texto en los encabezados */
+h1, h2, h3 {
+  transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+/* Transición suave al mostrar u ocultar elementos con la clase "fade" */
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Aplica la animación "fadeIn" a la sección con la clase "animated-section" */
+featured-section.animated-section {
+  animation: fadeIn 1s ease;
+}
+
+
+
 

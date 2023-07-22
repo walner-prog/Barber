@@ -7,8 +7,20 @@
         <link rel="stylesheet" href="css/bootstrap.min.css ">
         <link rel="stylesheet" href="css/bootstrap-icons.css ">
         
-
+        <!-- JAVASCRIPT FILES -->
+        <script tipe="text/javascript" src="/js/jquery.min.js"></script>
+        <script tipe="text/javascript" src="js\click-scroll.js "></script>
+        <script tipe="text/javascript" src="/js\custom.js "></script>
+        <script tipe="text/javascript" src="/js\bootstrap.bundle.min.js "></script>
+        <script tipe="text/javascript" src="/animaciones/sweetalert.js "></script>
+        <script tipe="text/javascript" src="animaciones\sweetalert.js"></script>
+        <script tipe="text/javascript" src="animaciones\sweetalert.js.map"></script>
+      
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/barber.css" rel="stylesheet">
+        <link href="css/animacion.css" rel="stylesheet">
+        <link href="/animaciones/animate.css" rel="stylesheet">
+
 
         <title>barberia</title>
 
@@ -23,9 +35,29 @@
 
        
         <link rel="shortcut icon" href="images/BarberG/logoB.jpg">
+
+        <script>
+            $(function() {
+                $("body").hide().fadeIn(5000);
+    
+
+                $(document).ready(function() {
+                    
+                    $(".animate__animated").addClass("animate__fadeIn");
+                  
+                 
+                    $(".animate__animated").css("animation-delay", "1.2s");
+                    $(".animate__animated").css("animation-duration", "1s");
+                  });
+                  
+            })
+
+    
+
+        </script>
     </head>
     <body>
-        
+
         <div class="container-fluid">
             <div class="row">
 
@@ -42,23 +74,26 @@
 
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#index">Hogar</a>
+                                <a class="animate-charcter2 animate__animated animate__fadeIn nav-link click-scroll" href="#index">Inicio</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_2">Tips de peluqueria</a>
+                                <a class="animate-charcter2 nav-link click-scroll" href="#section_2">Tips de peluqueria</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_3">Servicios</a>
+                                <a class="animate-charcter2 nav-link click-scroll" href="#section_3">Servicios</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_4">Listas de Precios </a>
+                                <a class="animate-charcter2 nav-link click-scroll" href="#section_4">Listas de Precios </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_5">Contacto</a>
+                                <a class="animate-charcter2 nav-link click-scroll" href="#section_5">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="animate-charcter2 nav-link click-scroll" href="#section_6">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -69,23 +104,18 @@
 
                             <div class="container">
                                 <div class="row">
-
-                                    <div class="col-lg-8 col-12">
-                                        <h1 class="text-white mb-lg-3 mb-4"><strong>La vida es demasiado corta para 
-                                            <br><em>  llevar un pelo aburrido</em></strong></h1>
-                                        <p class="text-black">Un corte de cabello de calidad y moderno</p>
-                                        <br>
-                                       
-                                    </div>
+                                    
                                 </div>
                             </div>
-
+                      
+                                 
+                          
                             <div class="custom-block d-lg-flex flex-column justify-content-center align-items-center">
                                 <img src="images/BarberG/berber2.jpg" class="custom-block-image img-fluid" alt="">
 
                                 <h4><strong class="text-white">.</strong></h4>
 
-                                <a href="#booking-section" class="smoothscroll btn custom-btn custom-btn-italic mt-3">Reservar un asiento</a>
+                                <a href="#booking-section" class="smoothscroll btn custom-btn custom-btn-italic mt-3">Lista de precios</a>
                             </div>
                     </section>
 
@@ -93,9 +123,17 @@
                     <section class="about-section section-padding" id="section_2">
                         <div class="container">
                             <div class="row">
-
+                                <div class="container">
+                                    
+                                    
+                                   
+                                </div>
                                 <div class="col-lg-12 col-12 mx-auto">
-                                    <h2 class="mb-4">Sabias que !!</h2>
+                                    <h2 class="title2 mb-4">
+                                        <span class="title-word title-word-1a">Sabias</span>
+                                        <span class="title-word title-word-2a"> que!</span>
+                                    
+                                    </h2>
 
                                     <div class="border-bottom pb-3 mb-5">
                                         <p>Uno de los principales beneficios de ir a la peluquería
@@ -103,11 +141,25 @@
                                               Un corte de cabello, o simplemente un buen lavado con hidratación,
                                                es una forma rápida de sentirse renovado y con energía. </p>
                                     </div>
+                                   
+                                        <h2 class="title">
+                                          <span class="title-word title-word-1">Creatividad</span>
+                                          
+                                          <span class="title-word title-word-2">Tendencias</span>
+                                      
+                                          <span class="title-word title-word-3">Profecion</span>
+                                          
+                                          <span class="title-word title-word-4">y mucho</span>
+                                        
+                                          <span class="title-word title-word-4">Mas </span>
+                                         
+                                        </h2>
+                                     
                                 </div>
 
                                     <h6 class="mb-5">Visitanos </h6>
 
-                                        <div class="col-lg-5 col-12 custom-block-bg-overlay-wrap me-lg-5 mb-5 mb-lg-0">
+                                        <div class=" col-lg-5 col-12 custom-block-bg-overlay-wrap me-lg-5 mb-5 mb-lg-0">
                                             <img src="images/BarberG/barberT.jpg" class="custom-block-bg-overlay-image img-fluid" alt="">
 
                                             <div class="team-info d-flex align-items-center flex-wrap">
@@ -155,7 +207,7 @@
                             </div>
                         </div>
                     </section>
-
+                    
                     <section class="featured-section section-padding">
                         <div class="section-overlay"></div>
 
@@ -163,7 +215,7 @@
                             <div class="row">
 
                                 <div class="col-lg-10 col-12 mx-auto">
-                                    <h2 class="mb-3">Obtenga 32% de descuento </h2>
+                                    <h2 class="mb-3">Contamos con buenas promociones  </h2>
 
                                     <p>en cada segunda semana del mes </p>
 
@@ -177,11 +229,13 @@
 
                     <section class="services-section section-padding" id="section_3">
                         <div class="container">
+                            <div class="services col-lg-12 col-12">
+                                <h1 class="services"><span class="servicesSpan"></span>Servicios<span class="servicesSpan"></span></span></h1>
+                              <!--  <h2 class="servicesSpan mb-5">Servicios</h2>-->
+                            </div>
                             <div class="row">
 
-                                <div class="col-lg-12 col-12">
-                                    <h2 class="mb-5">Servicios</h2>
-                                </div>
+                               
 
                                 <div class="col-lg-6 col-12 mb-4">
                                     <div class="services-thumb">
@@ -212,7 +266,7 @@
                                         <img src="images/BarberG/barber10.jpg" class="services-image img-fluid" alt="">
 
                                         <div class="services-info d-flex align-items-end">
-                                            <h4 class="mb-0">Afeita</h4>
+                                            <h4 class="mb-0">Afeitada</h4>
 
                                             <strong class="services-thumb-price">C$50.00</strong>
                                         </div>
@@ -236,50 +290,11 @@
                     </section>
 
                     <section class="booking-section section-padding" id="booking-section">
-                    <div class="container">
+                     <div class="container">
                         <div class="row">
 
-                            <div class="col-lg-10 col-12 mx-auto">
-                                <form action="#" method="post" class="custom-form booking-form" id="bb-booking-form" role="form">
-                                    <div class="text-center mb-5">
-                                        <h2 class="mb-1">Reservar un asiento</h2>
-
-                                        <p>Por favor, rellene el formulario y 
-                                            nos pondremos en contacto con usted</p>
-                                    </div>
-
-                                    <div class="booking-form-body">
-                                        <div class="row">
-
-                                            <div class="col-lg-6 col-12">
-                                                <input type="text" name="bb-name" id="bb-name" class="form-control" placeholder="Nombre completo" required>
-                                            </div>
-
-                                            <div class="col-lg-6 col-12">
-                                                <input type="tel" class="form-control" name="bb-phone" placeholder="Mobile (505)55555555" pattern="" >
-                                            </div>
-                                        
-                                            <div class="col-lg-6 col-12">
-                                                <input class="form-control" type="time" name="bb-time" value="18:30" />
-                                            </div>
-
-                                           
-                                            <div class="col-lg-6 col-12">
-                                                <input type="date" name="bb-date" id="bb-date" class="form-control" placeholder="Fecha" required>
-                                            </div>
-
-                                            <div class="col-lg-6 col-12">
-                                                <input type="number" name="bb-number" id="bb-number" class="form-control" placeholder="Numero de personas " required>
-                                            </div>
-                                        </div>
-
-                                        <textarea name="bb-message" rows="3" class="form-control" id="bb-message" placeholder="Comentarios (Opcional)"></textarea>
-
-                                        <div class="col-lg-4 col-md-10 col-8 mx-auto">
-                                            <button type="submit" class="form-control">Entregar</button>
-                                        </div>
-                                    </div>
-                                </form>
+                           
+                               
                         </div>
                     </div>
                 </section>
@@ -292,7 +307,9 @@
                                 <div class="col-lg-8 col-12">
                                     <div class="price-list-thumb-wrap">
                                         <div class="mb-4">
-                                            <h2 class="mb-2">Lista de precios</h2>
+                                            <h1 class="services promociones"><span class="servicesSpan promocionesSpan">
+                                                </span>Lista de precios <span class="servicesSpan promocionesSpan"></span></span></h1>
+                                          
 
                                             <strong>Desde  C$70</strong>
                                         </div>
@@ -342,6 +359,14 @@
                                             </h6>
                                         </div>
                                     </div>
+                                    <div class="animate__animated animate__fadeIn">
+                                        <div class="col-lg-8 col-12">
+                                            <h1 class="animate-charcter text-white mb-lg-3 mb-4"><strong>"La vida es demasiado corta para 
+                                                <br><em>  llevar un pelo aburrido"</em></strong></h1>
+                                           
+                                           
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="col-lg-4 col-12 custom-block-bg-overlay-wrap mt-5 mb-5 mb-lg-0 mt-lg-0 pt-3 pt-lg-0">
@@ -357,25 +382,54 @@
                     <div class="section-padding section-bg">
                         <div class="container">
                             <div class="row">   
+                                
+                                 <h1 class="diarioSpan marging"><span>Galeria</span></h1>
+                                <br>
+                                <hr>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="services-thumb">
+                                        <img src="images/BarberG/img1.jpg" class="services-image img-fluid" alt="">
 
-                                <div class="col-lg-8 col-12 mx-auto">
-                                    <h2 class="text-center"></h2>
+                                       
+                                    </div>
                                 </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="services-thumb">
+                                        <img src="images/BarberG/img2.jpg" class="services-image img-fluid" alt="">
+
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="services-thumb">
+                                        <img src="images/BarberG/img3.jpg" class="services-image img-fluid" alt="">
+
+                                       
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="services-thumb">
+                                        <img src="images/BarberG/img4.jpg" class="services-image img-fluid" alt="">
+
+                                    </div>
+                                </div>
+
+                                
                             </div>
                         </div>
                     </div>
 
-                    <div class="section-padding">
+                    <div class="section-padding" id="section_6">
                         <div class="container">
                             <div class="row">
 
                                 <div class="col-lg-6 col-12">
-                                    <h5 class="mb-3"><strong>Contacto</strong> Informacion</h5>
+                                    <h5 class="contacto mb-3"><strong class="contactoSpan">Contacto:</strong class="contactoSpan"> </h5>
 
                                     <p class="text-white d-flex mb-1">
                                         <a href="tel: 120-240-3600" class="site-footer-link">
                                             (+505) 
-                                            88234523
+                                            8405 8701
                                         </a>
                                     </p>
 
@@ -387,34 +441,35 @@
 
                                     <ul class="social-icon">
                                         <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-facebook">
+                                            <a href="https://www.facebook.com/profile.php?id=100086199735573&mibextid=2JQ9oc" class="social-icon-link bi-facebook">
                                             </a>
                                         </li>
             
+                                       
                                         <li class="social-icon-item">
+                                            <a href="https://instagram.com/german_barber_17?igshid=MmU2YjMzNjRlOQ==" class="social-icon-link bi-instagram">
+                                            </a>
+                                        </li>
+
+                                       <!-- <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-youtube">
+                                            </a>
+                                        </li>
+                                         <li class="social-icon-item">
                                             <a href="#" class="social-icon-link bi-twitter">
                                             </a>
                                         </li>
             
+                                           -->
                                         <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-instagram">
-                                            </a>
-                                        </li>
-
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-youtube">
-                                            </a>
-                                        </li>
-
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-whatsapp">
+                                            <a href="tel: +505 8405 8701" class="social-icon-link bi-whatsapp">
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
 
-                                <div class="col-lg-5 col-12 contact-block-wrap mt-5 mt-lg-0 pt-4 pt-lg-0 mx-auto">
-                                    <div class="contact-block">
+                                <div class=" col-lg-5 col-12 contact-block-wrap mt-5 mt-lg-0 pt-4 pt-lg-0 mx-auto">
+                                    <div class="diarioSpan contact-block">
                                         <h6 class="mb-0">
                                             <i class="custom-icon bi-shop me-3"></i>
 
@@ -457,10 +512,7 @@
             </div>
 
         
-        <!-- JAVASCRIPT FILES -->
-        <script tipe="text/javascript" src="js/jquery.min.js"></script>
-        <script tipe="text/javascript" src="js/click-scroll.js "></script>
-        <script tipe="text/javascript" src="js/custom.js "></script>
+       
 
     </body>
 </html>
